@@ -12,10 +12,10 @@ class MoviesAdapter(private val movies : List<Movie>)
     : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>(){
 
     inner class MovieViewHolder(renglon: View) : RecyclerView.ViewHolder(renglon){
-        var titulo = renglon.findViewById<TextView>(R.id.titulo)
-        var anio = renglon.findViewById<TextView>(R.id.anio)
-        var plot = renglon.findViewById<TextView>(R.id.plot)
-        var foto = renglon.findViewById<ImageView>(R.id.foto)
+        var titulo = renglon.findViewById<TextView>(R.id.name)
+        var anio = renglon.findViewById<TextView>(R.id.movie)
+        var plot = renglon.findViewById<TextView>(R.id.info)
+        var foto = renglon.findViewById<ImageView>(R.id.photo)
     }
 
     //Crea el renglón

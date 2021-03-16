@@ -35,10 +35,10 @@ class MovieFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        foto.setImageResource(args.movie.picture)
-        titulo.text = args.movie.titulo
-        anio.text = args.movie.anio
-        plot.text = args.movie.plot
+        photo.setImageResource(args.movie.picture)
+        name.text = args.movie.titulo
+        movie.text = args.movie.anio
+        info.text = args.movie.plot
 
     }
 }
