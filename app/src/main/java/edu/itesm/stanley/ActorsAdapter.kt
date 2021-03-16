@@ -21,7 +21,7 @@ class ActorsAdapter(private val actors : List<Actor>)
     //Crea el renglón
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActorViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val renglon_vista = inflater.inflate(R.layout.movies_renglon,parent, false)
+        val renglon_vista = inflater.inflate(R.layout.actors_renglon,parent, false)
         return ActorViewHolder(renglon_vista)
     }
 
