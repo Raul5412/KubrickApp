@@ -12,45 +12,47 @@
     android:clickable="true">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
 
         <ImageView
             android:id="@+id/photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="150dp"
             card_view:srcCompat="@mipmap/movies_round" />
 
         <LinearLayout
-            android:paddingLeft="10dp"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="@color/purple_500"
-                android:text="name" />
-
-            <TextView
-                android:id="@+id/movie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="italic"
-                android:textColor="@color/black"
-                android:text="movie" />
             <TextView
                 android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="info" />
 
+            <TextView
+                android:id="@+id/movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="movie"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold" />
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
